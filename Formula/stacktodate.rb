@@ -5,21 +5,21 @@
 class Stacktodate < Formula
   desc "CLI tool for Stack To Date - track your tech stack lifecycle"
   homepage "https://stacktodate.club"
-  version "0.1.7"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.1.7/stacktodate_darwin_amd64.tar.gz"
-      sha256 "63d255b678bdd72441198fb5342906222ba9551d4be16445dc14afce0a5c1257"
+      url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.2.0/stacktodate_darwin_amd64.tar.gz"
+      sha256 "82a4c0f84a9efb6f2bff2b902705cac210152d5f9819304f69d8d49da71a4b9b"
 
       def install
         bin.install "stacktodate"
       end
     end
     on_arm do
-      url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.1.7/stacktodate_darwin_arm64.tar.gz"
-      sha256 "2d88d3fe4f87cbd2461765d68ba5cde2350ed3c6f52600f0a2b2ab50fb0feba2"
+      url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.2.0/stacktodate_darwin_arm64.tar.gz"
+      sha256 "1ec685068f80f7f355a6da3f8d288ad16ea0f34c67c44748d4ea354c22789cc0"
 
       def install
         bin.install "stacktodate"
@@ -30,8 +30,8 @@ class Stacktodate < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.1.7/stacktodate_linux_amd64.tar.gz"
-        sha256 "d44d3bf3929e136fe8cc2d5fb09432ae8ed095ad55a65b9b311b130261b7e64d"
+        url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.2.0/stacktodate_linux_amd64.tar.gz"
+        sha256 "b25c5cb7dd860118a19cb8f29c6917c2acddc26150d771b60d689ffc9e67ced6"
 
         def install
           bin.install "stacktodate"
@@ -40,8 +40,8 @@ class Stacktodate < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.1.7/stacktodate_linux_arm64.tar.gz"
-        sha256 "81a967118206524f14bdb8ce4a3fe4515fdcce24f4034b6f5cbf0db04226b8b8"
+        url "https://github.com/stacktodate/stacktodate-cli/releases/download/v0.2.0/stacktodate_linux_arm64.tar.gz"
+        sha256 "61dd2bb553af8f6cba637e9ecc50e7067a7ac137ffa5d9bfb4162762496b06c9"
 
         def install
           bin.install "stacktodate"
